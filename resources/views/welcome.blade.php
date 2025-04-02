@@ -12,6 +12,7 @@
       background: #f9f9f9;
       color: #222;
     }
+    
     header {
       background-color: #0c1b33;
       color: #fff;
