@@ -3,124 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EL ENFOQUE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <title>RealidadDigital.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fff;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
+      background: #f9f9f9;
       color: #222;
     }
     header {
+      background-color: #0c1b33;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 20px 10px 5px;
-      border-bottom: 1px solid #ccc;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 48px;
+      font-size: 42px;
       margin: 0;
     }
     header p {
+      margin-top: 5px;
+      font-size: 16px;
+      color: #ccc;
       font-style: italic;
-      color: #555;
-      margin-top: 4px;
     }
     nav {
-      background-color: #f5f5f5;
+      background-color: #13294b;
+      display: flex;
+      justify-content: center;
       padding: 10px;
-      text-align: center;
     }
     nav a {
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
     }
-    .container {
-      display: flex;
+    .main-container {
       max-width: 1200px;
-      margin: 20px auto;
-      gap: 20px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+      padding: 0 20px;
     }
-    .main {
-      flex: 3;
+    .main-news {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .sidebar {
-      flex: 1;
-      border-left: 1px solid #ccc;
-      padding-left: 20px;
-    }
-    .article {
-      margin-bottom: 30px;
-    }
-    .article img {
+    .main-news img {
       width: 100%;
       height: auto;
+      margin-bottom: 15px;
     }
-    .article h2 {
-      font-size: 24px;
-      margin: 10px 0;
+    .main-news h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
-    .article p {
-      color: #555;
+    .main-news p {
+      color: #444;
+    }
+    .sidebar {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .sidebar h3 {
+      border-bottom: 2px solid #13294b;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #13294b;
+      font-weight: 600;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f0f0f0;
+      background-color: #0c1b33;
+      color: #ccc;
       font-size: 14px;
-      color: #777;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>EL ENFOQUE</h1>
-    <p>Observamos distinto.</p>
-    <div>Miércoles, 2 de abril de 2025</div>
+    <h1>REALIDADDIGITAL.COM</h1>
+    <p>Noticias que incomodan, datos que importan.</p>
   </header>
 
   <nav>
+    <a href="#">Inicio</a>
     <a href="#">Política</a>
+    <a href="#">Sociedad</a>
+    <a href="#">Internacional</a>
     <a href="#">Economía</a>
-    <a href="#">Cultura</a>
     <a href="#">Ciencia</a>
     <a href="#">Opinión</a>
   </nav>
 
-  <div class="container">
-    <main class="main">
-      <div class="article">
-        <img src="https://via.placeholder.com/800x400" alt="Imagen principal">
-        <h2>Crisis energética mundial: Nuevas tensiones en los mercados</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate justo felis commodo libero...</p>
-      </div>
-      <div class="article">
-        <h2>Educación en crisis: ¿Qué están haciendo los gobiernos?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at felis id magna cursus imperdiet...</p>
-      </div>
-      <div class="article">
-        <h2>Entrevista: La inteligencia artificial y el futuro del trabajo</h2>
-        <p>Quisque nec sem a turpis dignissim finibus. Suspendisse vel mauris eu sapien vehicula fermentum...</p>
-      </div>
-    </main>
+  <div class="main-container">
+    <div class="main-news">
+      <img src="https://via.placeholder.com/800x400" alt="Noticia principal">
+      <h2>La verdad detrás del último conflicto global</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed felis eget felis feugiat hendrerit. Sed id erat nec arcu gravida ultrices. Maecenas tincidunt, magna ut lacinia tincidunt, augue erat blandit urna, a efficitur orci lacus nec urna.</p>
+    </div>
 
     <aside class="sidebar">
-      <h3>Secciones</h3>
+      <h3>Más leídas</h3>
       <ul>
-        <li>📌 Política</li>
-        <li>📈 Economía</li>
-        <li>🎨 Cultura</li>
-        <li>🔬 Ciencia</li>
-        <li>🗣️ Opinión</li>
+        <li><a href="#">¿Por qué el precio de los alimentos sigue subiendo?</a></li>
+        <li><a href="#">Cinco contradicciones del discurso político actual</a></li>
+        <li><a href="#">El impacto silencioso de la IA en el empleo</a></li>
+        <li><a href="#">Protestas globales: lo que los medios no te muestran</a></li>
+        <li><a href="#">Análisis: ¿Crisis energética o manipulación?</a></li>
       </ul>
     </aside>
   </div>
 
   <footer>
-    &copy; 2025 El Enfoque. Todos los derechos reservados.
+    &copy; 2025 RealidadDigital.com. Todos los derechos reservados.
   </footer>
 </body>
 </html>
